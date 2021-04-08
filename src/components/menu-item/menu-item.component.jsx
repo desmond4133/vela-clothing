@@ -3,12 +3,14 @@ import './menu-item.styles.scss';
 
 const MenuItem = ({title, imageUrl}) => (
 
-    <div 
-     styles={{
-        backgroundImage: 'url$({imageUrl})'
-     }}
-     className='menu-item'>
+    <div  className='menu-item'>
      
+     <div className='background-image' style = {{
+        backgroundImage: `url(${imageUrl})`
+     }} >
+
+     </div>
+
      <div className='content'>
 
         <h1 className='title'>{title}</h1>
@@ -18,6 +20,6 @@ const MenuItem = ({title, imageUrl}) => (
 
     </div>
 
-)
+);
 
 export default MenuItem;
